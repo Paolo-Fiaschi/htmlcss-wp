@@ -270,10 +270,6 @@ main::after{
 }
 /* footer */
 footer{
-  /* debug */
-  /* background-color: blue; */
-  height: 400px;
-  /* end debug */
   width:90%;
   margin-left: auto;
   margin-right: auto;
