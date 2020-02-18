@@ -55,19 +55,17 @@ nav{
 }
 ul{
   display: inline-block;
-  margin: 0px auto 0px;
+  padding: 16px;
 }
 li{
   display: inline-block;
-  margin-top: 3%;
   text-align: center;
 }
  .menu a,
 .menu a:link,
 .menu a:visited{
   color: rgba(255, 255, 255, .7);
-  margin: 0px;
-  padding: 0 12px;
+  padding: 10px;
   border-right: 1px solid rgba(0, 0, 0, .4)
 }
 nav ul li a{
@@ -283,6 +281,7 @@ footer{
 }
 .information{
   background-color: white;
+  border-bottom: 1px solid rgba(0, 0, 0, .08);
 }
 .conteiner-information{
   margin-left: auto;
@@ -291,56 +290,149 @@ footer{
   height: 300px;
   padding: 20px;
 }
+.information::after{
+  content: "";
+  display: table;
+  clear: both;
+}
 .recent-posts{
   width: 20%;
   float: left;
-  background-color: lightblue;
-  height: 100%;
 }
+.recent-posts h4,
+.recent-comments h4,
+.categories h4,
+.text-widget h4{
+  /* margin: 0px 20px; */
+  padding: 4px 20px;
+  line-height: 2.4;
+  font-size: 20px;
+  color: #504741;
+  font-weight: 300
+}
+.recent-posts ul,
+.recent-comments ul,
+.categories ul,
+.recent-posts ul li,
+.recent-comments ul li,
+.categories ul li{
+  display: block;
+  text-align: left;
+  margin: 4px 16px;
+  padding: 4px 0;
+  line-height: 1.4;
+  color: rgba(0, 0, 0, .35);
+  font-weight: 400;
+  font-size: 18px;
+}
+.recent-posts ul li a,
+.recent-comments ul li a,
+.categories ul li a{
+  display: inline-block;
+  width: 100%;
+}
+.recent-posts a,
+.recent-posts a:link,
+.recent-posts a:visited,
+.recent-comments a,
+.recent-comments a:link,
+.recent-comments a:visited,
+.categories a,
+.categories a:link,
+.categories a:visited,
+.left-information a,
+.left-information a:link,
+.left-information a:visited{
+ color: rgba(0, 0, 0, 0.35);
+}
+.recent-posts li,
+.recent-posts li a,
+.recent-comments li,
+.recent-comments li a,
+.categories li,
+.categories li a{
+  background-color: rgba(0, 0, 0, 0.04);
+  background: none;
+  text-decoration: none;
+}
+.left-information a{
+  text-decoration: none;
+}
+.left-information a:hover{
+  text-decoration: underline;
+
+}
+.recent-posts li a:hover,
+.recent-comments li a:hover,
+.categories li a:hover{
+  background-color: rgba(0, 0, 0, 0.04);
+  text-decoration: underline;
+}
+
 .recent-comments{
   width: 20%;
   float: left;
-  background-color: brown;
-  height: 100%;
 }
 .categories{
   width: 20%;
   float: left;
-  background-color: purple;
-  height: 100%;
+}
+.text-widget-div{
+  color: rgba(0, 0, 0, 0.35);
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  line-height: 1.8;
+  padding: 20px 20px 50px 20px;
+  text-align: justify;
 }
 .text-widget{
   width: 40%;
   float: left;
-  background-color: lightgreen;
-  height: 100%;
 }
 .conteiner-information::after{
   content: "";
   display: table;
   clear: both;
 }
+.conteiner-sidebar::after{
+  content: "";
+  display: table;
+  clear: both;
+}
 .sidebar{
-  /* debug */
-  background-color: black;
-  /* end debug */
-  margin-top:0px;
+  background-color: white;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  height: 100px;
 }
 .left-information{
   width: 40%;
   float: left;
-  background-color: lightblue;
-  height: 50px;
-  margin: 30px;
+  padding: 30px 20px;
+  font-size: 0.9em;
+  line-height: 1.8;
+  font-family: 'Roboto', sans-serif;
+  color: #666666;
+  font-weight: 300;
 }
 .right-information{
-  width: 40%;
+  width: 28%;
   float: right;
-  background-color: lightblue;
-  height: 50px;
-  margin: 30px;
+  padding: 30px 20px;
+}
+span{
+  padding-right: 12px;
+  font-size: 30px;
+  display: inline-block;
+  color: rgba(0, 0, 0, .35);
+  font-weight: 400;
+  background: rgba(0, 0, 0, .06);
+  text-align: center;
+  line-height: 36px;
+  min-height: 36px;
+  min-width: 36px;
+  margin: 3px;
+  padding: 0px;
+  border-radius: 100%;
 }
